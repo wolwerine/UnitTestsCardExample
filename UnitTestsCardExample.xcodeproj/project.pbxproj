@@ -21,6 +21,11 @@
 		9229CEFA1A023BAA00AC677F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9229CEDC1A023BA900AC677F /* UIKit.framework */; };
 		9229CF021A023BAA00AC677F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9229CF001A023BAA00AC677F /* InfoPlist.strings */; };
 		9229CF041A023BAA00AC677F /* UnitTestsCardExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9229CF031A023BAA00AC677F /* UnitTestsCardExampleTests.m */; };
+		9229CF101A023D0200AC677F /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 9229CF0F1A023D0200AC677F /* Card.m */; };
+		9229CF131A023D4400AC677F /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9229CF121A023D4400AC677F /* PlayingCard.m */; };
+		9229CF161A023D6900AC677F /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 9229CF151A023D6900AC677F /* Deck.m */; };
+		9229CF191A023D8E00AC677F /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 9229CF181A023D8E00AC677F /* PlayingCardDeck.m */; };
+		9229CF1B1A023FF100AC677F /* CardTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9229CF1A1A023FF100AC677F /* CardTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		9229CEFF1A023BAA00AC677F /* UnitTestsCardExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTestsCardExampleTests-Info.plist"; sourceTree = "<group>"; };
 		9229CF011A023BAA00AC677F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9229CF031A023BAA00AC677F /* UnitTestsCardExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTestsCardExampleTests.m; sourceTree = "<group>"; };
+		9229CF0E1A023D0200AC677F /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		9229CF0F1A023D0200AC677F /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		9229CF111A023D4400AC677F /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		9229CF121A023D4400AC677F /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		9229CF141A023D6900AC677F /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		9229CF151A023D6900AC677F /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		9229CF171A023D8E00AC677F /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		9229CF181A023D8E00AC677F /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		9229CF1A1A023FF100AC677F /* CardTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTestCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +126,7 @@
 		9229CEDE1A023BA900AC677F /* UnitTestsCardExample */ = {
 			isa = PBXGroup;
 			children = (
+				9229CF0D1A023CCB00AC677F /* Models */,
 				9229CEE71A023BA900AC677F /* AppDelegate.h */,
 				9229CEE81A023BA900AC677F /* AppDelegate.m */,
 				9229CEEA1A023BAA00AC677F /* Main.storyboard */,
@@ -138,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				9229CF031A023BAA00AC677F /* UnitTestsCardExampleTests.m */,
+				9229CF1A1A023FF100AC677F /* CardTestCase.m */,
 				9229CEFE1A023BAA00AC677F /* Supporting Files */,
 			);
 			path = UnitTestsCardExampleTests;
@@ -150,6 +166,21 @@
 				9229CF001A023BAA00AC677F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9229CF0D1A023CCB00AC677F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9229CF0E1A023D0200AC677F /* Card.h */,
+				9229CF0F1A023D0200AC677F /* Card.m */,
+				9229CF111A023D4400AC677F /* PlayingCard.h */,
+				9229CF121A023D4400AC677F /* PlayingCard.m */,
+				9229CF141A023D6900AC677F /* Deck.h */,
+				9229CF151A023D6900AC677F /* Deck.m */,
+				9229CF171A023D8E00AC677F /* PlayingCardDeck.h */,
+				9229CF181A023D8E00AC677F /* PlayingCardDeck.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +283,10 @@
 				9229CEEF1A023BAA00AC677F /* ViewController.m in Sources */,
 				9229CEE91A023BA900AC677F /* AppDelegate.m in Sources */,
 				9229CEE51A023BA900AC677F /* main.m in Sources */,
+				9229CF131A023D4400AC677F /* PlayingCard.m in Sources */,
+				9229CF191A023D8E00AC677F /* PlayingCardDeck.m in Sources */,
+				9229CF161A023D6900AC677F /* Deck.m in Sources */,
+				9229CF101A023D0200AC677F /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9229CF041A023BAA00AC677F /* UnitTestsCardExampleTests.m in Sources */,
+				9229CF1B1A023FF100AC677F /* CardTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +415,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTestsCardExample/UnitTestsCardExample-Prefix.pch";
 				INFOPLIST_FILE = "UnitTestsCardExample/UnitTestsCardExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,6 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTestsCardExample/UnitTestsCardExample-Prefix.pch";
 				INFOPLIST_FILE = "UnitTestsCardExample/UnitTestsCardExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
