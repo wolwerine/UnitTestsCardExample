@@ -494,6 +494,7 @@
 				9229CF091A023BAA00AC677F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9229CF0A1A023BAA00AC677F /* Build configuration list for PBXNativeTarget "UnitTestsCardExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +503,7 @@
 				9229CF0C1A023BAA00AC677F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
