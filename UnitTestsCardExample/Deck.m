@@ -37,11 +37,15 @@
     [self addCard:card atTop:NO];
 }
 
-- (Card *)drawRandomCard
-{
+- (Card *)drawRandomCard{
     Card *randomCard = nil;
-    if ([self.cards count])
-    {
+    if ([self.cards count]){
+        
+        int a;
+        int b = a;
+        
+        a = b*2;
+        
         unsigned index = arc4random() % [self.cards count];
         randomCard = self.cards[index];
         [self.cards removeObjectAtIndex:index];
